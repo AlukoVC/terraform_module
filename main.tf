@@ -67,6 +67,6 @@ module "security_group" {
   security_group_name         = "example-serveur-web"
   security_group_description  = "Regles de securite pour le serveur web"
   vpc_id                      = module.network.vpc_id
-  ssh_ingress_ip              = "your_ip_here"  # Replace with your specific IP for SSH ingress
+  ssh_ingress_ip              = aws_instance.example3.private_ip
 }
 
