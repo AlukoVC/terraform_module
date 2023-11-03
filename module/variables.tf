@@ -17,14 +17,6 @@ variable "key_name" {
   default     = "key-pair"
 }
 
-variable "subnet_id" {
-  description = "ID du sous-réseau pour l'instance EC2"
-}
-
-variable "security_group_ids" {
-  description = "Liste des ID des groupes de sécurité pour l'instance EC2"
-}
-
 variable "vpc_cidr_block" {
   description = "CIDR block for the VPC"
 }
